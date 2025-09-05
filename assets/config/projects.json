@@ -1,0 +1,67 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Scriptable iOS Widgets",
+      "description": "A collection of Scriptable app widgets for iOS that provide useful information and functionality right on your home screen.",
+      "technologies": ["JavaScript", "iOS", "Scriptable"],
+      "category": "automation",
+      "image": "./assets/projects/scriptable.png",
+      "githubUrl": "https://github.com/rushhiii/Scriptable-IOSWidgets",
+      "liveUrl": "https://rushhiii.github.io/Scriptable-IOSWidgets/",
+      "liveLabel": "Docs",
+      "liveIcon": "fas fa-book",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Rushi Bashfolio",
+      "description": "A unique terminal-style portfolio website that showcases skills and projects through an interactive command-line interface.",
+      "technologies": ["JavaScript", "CSS", "Terminal UI"],
+      "category": "web",
+      "image": "./assets/projects/bashfolio.png",
+      "githubUrl": "https://github.com/rushhiii/Rushi-Bashfolio",
+      "liveUrl": "https://rushi-bashfolio.netlify.app",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "GitHub Widget",
+      "description": "Track your GitHub stats — commits, contributions, Heatmap, streaks, PRs, issues, and repo insights — all beautifully displayed on your iOS home screen using Scriptable with dynamic layouts and theme support.",
+      "technologies": ["JavaScript", "Scriptable", "iOS Widgets", "GitHub API"],
+      "category": "automation",
+      "image": "./assets/projects/githubstats.png",
+      "githubUrl": "https://github.com/rushhiii/Scriptable-IOSWidgets/blob/main/Widgets/GitHubStats%20Widget/MyGitHubStats.js",
+      "liveUrl": "https://rushhiii.github.io/Scriptable-IOSWidgets/widgets/github-stats-widget.html",
+      "liveLabel": "Docs", 
+      "liveIcon": "fas fa-book",
+      "featured": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "name": "All",
+      "icon": "fa-solid fa-diagram-project",
+      "visible": true
+    },
+    {
+      "id": "web",
+      "name": "Web Dev",
+      "icon": "fa-solid fa-globe",
+      "visible": true
+    },
+    {
+      "id": "education",
+      "name": "Educational",
+      "icon": "fa-solid fa-graduation-cap",
+      "visible": false
+    },
+    {
+      "id": "automation",
+      "name": "Automation",
+      "icon": "fa-solid fa-robot",
+      "visible": true
+    }
+  ]
+}

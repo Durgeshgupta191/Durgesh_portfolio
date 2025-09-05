@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Durgesh's Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="./assets/ele/logo1.png" alt="Logo" class="loading-logo-img">
+                <div class="loading-logo-glow"></div>
+            </div>
+            <div class="loading-text">
+                <h1 class="loading-title">
+                    <span class="loading-word">Welcome</span>
+                    <span class="loading-word">to</span>
+                    <span class="loading-word">my</span>
+                    <span class="loading-word">portfolio.</span>
+                </h1>
+            </div>
+        </div>
+        <div class="loading-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./assets/ele/logo1.png" alt="Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <!-- <li><a href="./nexus_card.html" class="nav-link">Profile Card</a></li> -->
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+            <div class="floating-elements">
+                <div class="floating-card parallax-medium" data-speed="2">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="floating-card parallax-fast" data-speed="3">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="floating-card parallax-slow" data-speed="2.5">
+                    <i class="fas fa-terminal"></i>
+                </div>
+                <div class="floating-card parallax-medium" data-speed="1.5">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                <div class="floating-card parallax-fast" data-speed="1">
+                    <i class="fab fa-react"></i>
+                </div>
+                <!-- <div class="floating-card" data-speed="1.8">
+                    <i class="fab fa-css3-alt"></i>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    hey, I'm <span class="text-gradient">Durgesh Gupta</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="typing-text">MCA Student</span>
+                    <span class="cursor">|</span>
+                </p>
+                <p class="hero-description">
+                    Strong interest in software and web development. Passionate about building full-stack applications using modern technologies like React, Node.js, and MongoDB. Eager to learn and contribute to real-world development projects.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://github.com/Durgeshgupta191" class="btn btn-primary" target="_blank">
+                        <span>GitHub Profile</span>
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/durgesh-gupta-130644288/" class="btn btn-primary" target="_blank">
+                        <span>LinkedIn</span>
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="./assets/Durgesh_gupta_CV.pdf" class="btn btn-secondary" download="Durgesh_gupta_CV.pdf">
+                        <span>Resume</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                   
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="./assets/ele/Main_img2.jpg" alt="Tirth Patel - Developer Illustration"
+                        class="profile-image">
+                    <div class="image-glow"></div>
+                </div>
+                <div class="status-badge">
+                    <div class="status-indicator"></div>
+                    <!-- <span>Open to work</span> -->
+                     <span>Open to Work</span>
+            
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Code-Create-Connect</h2>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-card large scroll-reveal-left scroll-stagger-1 glow-border">
+                    <div class="card-content">
+                        <h3>My Journey</h3>
+                        <p>Along the way, I’ve explored various technologies — from frontend design to backend development — and solved many coding challenges.</p>
+                        <!-- <h3>My Coding Journey</h3> -->
+                        <!-- <p>I still remember the first time I touched a computer with intention — it was in Grade 11. What started as curiosity about solving logic problems became my obsession. From barely knowing how to type to building automation tools and exploring C, C++, and UNIX, I'm now a 2nd Year Computer Science Student at Toronto Metropolitan University.</p> -->
+                        <div class="journey-stats">
+                            <div class="stat scroll-reveal-scale scroll-stagger-2">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Years Coding</span>
+                            </div>
+                            <div class="stat scroll-reveal-scale scroll-stagger-3">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projects Built</span>
+                            </div>
+                            <!-- <div class="stat">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Repositories</span>
+                            </div> -->
+                            <!-- <div class="stat">
+                                <span class="stat-number">3.8</span>
+                                <span class="stat-label">GPA</span>
+                            </div> -->
+                            <div class="stat scroll-reveal-scale scroll-stagger-4">
+                                <span class="stat-number">CSJM</span>
+                                <span class="stat-label">University</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card scroll-reveal-right scroll-stagger-2">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <p>Master of Computer Applicatione<br>Chhatrapati Shahu Ji Maharaj University, Kanpur</p>
+                        
+                        <span class="card-meta">2025 - Present</span>
+                    </div>
+                </div>
+                <div class="bento-card scroll-reveal-right scroll-stagger-2">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education</h3>
+                        <p>Bachelor of Computer Application<br>Chhatrapati Shahu Ji Maharaj University, Kanpur<br> CGPA- 8.46</p>
+                       
+                        <span class="card-meta">2022 - 2025</span>
+                    </div>
+                </div>
+                <div class="bento-card scroll-reveal-right scroll-stagger-2">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Profile</h3>
+                        <p>LEETCODE:
+                        <a href="https://leetcode.com/u/1ThiGf1ZfH/" target="_blank" rel="noopener noreferrer">click here/ Leetcode 
+                        </a></p>
+                        <p>GOOGLE ARCADE:
+                        <a href="https://www.cloudskillsboost.google/public_profiles/4f4e9561-52c7-4927-8b8e-d5dca699d9f4" target="_blank" rel="noopener noreferrer">click here/ Arcade
+                        </a></p>
+                        <!-- <p>2nd Year Computer Science Student<br>Toronto Metropolitan University</p> -->
+                    </div>
+                </div>
+
+                <div class="bento-card scroll-reveal-right scroll-stagger-3">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                            <!-- <i class="fas fa-code"></i> -->
+                        </div>
+                        <h3>Passion</h3>
+                        <!-- <h3>Focus Areas</h3> -->
+                        <div class="focus-tags">
+                            <span class="tag">Full-Stack Development</span>
+                            <span class="tag">AI & ML</span>
+                            <span class="tag">Problem Solving</span>
+                            <span class="tag">DSA</span>
+                            <!-- <span class="tag">UNIX</span> -->
+                        </div>
+                        <!-- <p style="font-style:italic;margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">Perfection isn't the goal. Precision is.</p> -->
+                    </div>
+                </div>
+
+                <div class="bento-card wide scroll-reveal scroll-stagger-4 glow-border">
+                    <div class="card-content">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-badges">
+                            <div class="tech-badge html scroll-reveal-scale scroll-stagger-1">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tech-badge css scroll-reveal-scale scroll-stagger-2">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tech-badge javascript scroll-reveal-scale scroll-stagger-3">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-badge python scroll-reveal-scale scroll-stagger-4">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-badge java scroll-reveal-scale scroll-stagger-5">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-badge cpp scroll-reveal-scale scroll-stagger-6">
+                                <i class="fas fa-code"></i>
+                                <span>C/C++</span>
+                            </div>
+                            <div class="tech-badge nodejs scroll-reveal-scale scroll-stagger-1">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-badge bootstrap scroll-reveal-scale scroll-stagger-2">
+                                <i class="fab fa-bootstrap"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="tech-badge git scroll-reveal-scale scroll-stagger-3">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="tech-badge github scroll-reveal-scale scroll-stagger-4">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="tech-badge mysql scroll-reveal-scale scroll-stagger-5">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="tech-badge figma scroll-reveal-scale scroll-stagger-6">
+                                <i class="fab fa-database"></i>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!--Project -->
+    <section id="projects" class="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Projects</span>
+      <h2 class="section-title">Featured Projects</h2>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="assets/ele/food delivery.png" alt="Food Delivery App Screenshot" class="project-img">
+        <div class="project-content">
+          <h3>Food Delivery App <span class="badge">Featured</span></h3>
+          <p>A food delivery app that enables users to order meals and allows restaurants to manage orders in real-time.</p>
+          <div class="tags">
+            <span>PHP</span><span>SQL</span><span>Modern Design</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Durgeshgupta191/Food_Ordering_app" target="_blank" class="btn btn-outline">Code</a>
+            <!--<a href="https://your-deployed-link.com" target="_blank" class="btn btn-primary">View Project</a>> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="assets/ele/Tour.png" alt="Weat Chatbot Screenshot" class="project-img">
+        <div class="project-content">
+          <h3>Tour&Travel <span class="badge">Featured</span></h3>
+          <p>A Tour & Travel Web App that allows users to explore destinations, compare packages, and book trips online.</p>
+          <div class="tags">
+            <span>HTML</span><span>JavScript</span><span>CSS</span><span>API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Durgeshgupta191/Tour-travel/tree/main/Tour%20%26%20Travel" target="_blank" class="btn btn-outline">Code</a>
+             <!--<a href="https://your-deployed-link.com" target="_blank" class="btn btn-primary">View Project</a>> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="assets/ele/newsly.png" alt="Tour & Travel Screenshot" class="project-img">
+        <div class="project-content">
+          <h3>Newsly <span class="badge">Featured</span></h3>
+          <p>Newsly is a modern news application that delivers the latest headlines and articles from multiple sources in real-time.</p>
+          <div class="tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/your-username/tour-travel-app" target="_blank" class="btn btn-outline">Code</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="projects-cta">
+      <p>Interested in seeing more?</p>
+      <a href="https://github.com/Durgeshgupta191" class="btn btn-outline" target="_blank">
+        <i class="fab fa-github"></i>
+        <span>View All on GitHub</span>
+      </a>
+    </div>
+  </div>
+</section>    
+
+
+<!-- Contact Section -->
+
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-header scroll-reveal">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Let's Build Something Amazing Together</h2>
+    </div>
+
+    <!-- Contact Cards Grid -->
+    <div class="contact-grid">
+      
+      <!-- Email -->
+      <div class="contact-card scroll-reveal-left scroll-stagger-1">
+        <div class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h3>Email</h3>
+        <p>durgeshg659@gmail.com</p>
+        <a href="mailto:durgeshg659@gmail.com" class="contact-link">Send Message</a>
+      </div>
+
+      <!-- WhatsApp -->
+      <div class="contact-card scroll-reveal-left scroll-stagger-2">
+        <div class="contact-icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <h3>WhatsApp</h3>
+        <p>Want To Talk</p>
+        <a href="https://wa.me/qr/4JVMGUER5EGSB1" target="_blank" class="contact-link">Drop Message</a>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="contact-card scroll-reveal-left scroll-stagger-3">
+        <div class="contact-icon">
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <h3>LinkedIn</h3>
+        <p>Let's connect professionally</p>
+        <a href="https://www.linkedin.com/in/durgesh-gupta-130644288/" target="_blank" class="contact-link">Connect</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="./assets/ele/letter_logo_gl.png" alt="Logo" class="logo-img">
+                    </div>
+                    <!-- <p>Building the future, one line of code at a time.</p> -->
+                    <p style="font-style:italic">Simplicity is the soul of efficiency.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://github.com/Durgeshgupta191" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/durgesh-gupta-130644288" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:durgeshg659@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.instagram.com/the_agxm_1/" target="_blank" aria-label="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Durgesh Gupta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
