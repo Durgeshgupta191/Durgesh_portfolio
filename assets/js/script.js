@@ -1544,5 +1544,42 @@ document.addEventListener('DOMContentLoaded', () => {
     new EnhancedFeatures();
 });
 
+// =======================
+// Certificates Section JS
+// =======================
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById("certificateModal");
+    const modalImg = document.getElementById("modalImage");
+    const closeBtn = document.querySelector(".close-modal");
+    const scrollContainer = document.getElementById("certificatesRow");
 
+    if (!modal || !modalImg || !closeBtn || !scrollContainer) return;
 
+    document.querySelectorAll(".certificate-img").forEach(img => {
+        img.addEventListener("click", () => {
+            modal.style.display = "flex";
+            modalImg.src = img.src;
+            document.body.style.overflow = "hidden";
+        });
+    });
+
+    closeBtn.addEventListener("click", closeModal);
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+    });
+
+    function closeModal() {
+        modal.style.display = "none";
+        modalImg.src = "";
+        document.body.style.overflow = "";
+    }
+
+    // Arrow scroll function (THIS was missing earlier)
+    window.scrollCertificates = function (direction) {
+        const scrollAmount = 300;
+        scrollContainer.scrollBy({
+            left: direction * scrollAmount,
+            behavior: "smooth"
+        });
+    };
+});
