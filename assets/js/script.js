@@ -8,7 +8,47 @@ class PortfolioApp {
         this.isDarkTheme = true;
         this.loadingProgress = 0;
 
+        this.initLoadingTextDecoder();
         this.initLoading();
+    }
+
+    initLoadingTextDecoder() {
+        const words = document.querySelectorAll('.loading-word');
+        if (!words.length) return;
+
+        const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*_?';
+
+        words.forEach((word, index) => {
+            const targetText = word.textContent.trim();
+            const scrambledText = Array.from({ length: targetText.length }, () => charset[Math.floor(Math.random() * charset.length)]).join('');
+
+            word.textContent = scrambledText;
+            word.classList.remove('decoded');
+
+            setTimeout(() => {
+                let revealedChars = 0;
+                const interval = setInterval(() => {
+                    if (revealedChars >= targetText.length) {
+                        clearInterval(interval);
+                        word.textContent = targetText;
+                        word.classList.add('decoded');
+                        return;
+                    }
+
+                    const chars = Array.from(word.textContent);
+                    for (let i = 0; i < revealedChars; i++) {
+                        chars[i] = targetText[i];
+                    }
+
+                    for (let i = revealedChars; i < chars.length; i++) {
+                        chars[i] = charset[Math.floor(Math.random() * charset.length)];
+                    }
+
+                    word.textContent = chars.join('');
+                    revealedChars++;
+                }, 70 + index * 10);
+            }, 180 + index * 220);
+        });
     }
 
     initLoading() {
@@ -18,9 +58,27 @@ class PortfolioApp {
         // Wait for all resources to load
         window.addEventListener('load', () => {
             setTimeout(() => {
+                this.showAccessGranted();
+            }, 3200);
+
+            setTimeout(() => {
                 this.hideLoadingScreen();
-            }, 2000); // Reduced from 3000ms to 1500ms (1.5 seconds)
+            }, 4200);
         });
+    }
+
+    showAccessGranted() {
+        const accessMessage = document.getElementById('loading-access');
+        const loadingTitle = document.querySelector('.loading-title');
+
+        if (accessMessage) {
+            accessMessage.classList.add('show');
+        }
+
+        if (loadingTitle) {
+            loadingTitle.classList.add('blur-out');
+            loadingTitle.style.filter = 'drop-shadow(0 0 10px rgba(34, 197, 94, 0.24))';
+        }
     }
 
     hideLoadingScreen() {
