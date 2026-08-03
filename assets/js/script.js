@@ -95,7 +95,6 @@ class PortfolioApp {
     
     async init() {
         this.setupEventListeners();
-        this.initTheme();
         this.initTypingEffect();
         this.initScrollAnimations();
         this.initParallax();
@@ -131,12 +130,6 @@ class PortfolioApp {
                 }
             }
         });
-
-        // Theme toggle
-        const themeToggle = document.getElementById('themeToggle');
-        if (themeToggle) {
-            themeToggle.addEventListener('click', () => this.toggleTheme());
-        }
 
         // Mobile menu toggle
         const mobileMenuToggle = document.getElementById('mobileMenuToggle');
@@ -208,39 +201,6 @@ class PortfolioApp {
             top: 0,
             behavior: 'smooth'
         });
-    }
-
-    initTheme() {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            this.isDarkTheme = savedTheme === 'dark';
-        } else {
-            // Check system preference
-            this.isDarkTheme = !window.matchMedia('(prefers-color-scheme: light)').matches;
-        }
-
-        this.applyTheme();
-    }
-
-    toggleTheme() {
-        this.isDarkTheme = !this.isDarkTheme;
-        this.applyTheme();
-        localStorage.setItem('theme', this.isDarkTheme ? 'dark' : 'light');
-    }
-
-    applyTheme() {
-        const themeToggle = document.getElementById('themeToggle');
-        if (this.isDarkTheme) {
-            document.documentElement.removeAttribute('data-theme');
-            if (themeToggle) {
-                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-            }
-        } else {
-            document.documentElement.setAttribute('data-theme', 'light');
-            if (themeToggle) {
-                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-            }
-        }
     }
 
     toggleMobileMenu() {
