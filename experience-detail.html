@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experience Detail</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="chatbot/chatbot.css" />
+  </head>
+  <body>
+    <main class="experience-detail-page">
+      <div class="container">
+        <a class="back-link" href="index.html#experience">← Back to Experience</a>
+        <section class="experience-detail-hero">
+          <span class="section-tag">Experience Gallery</span>
+          <h1 id="detailTitle">Experience</h1>
+          <p id="detailDescription"></p>
+          <div class="detail-meta">
+            <span id="detailOrg"></span>
+            <span id="detailTime"></span>
+          </div>
+        </section>
+
+        <div class="detail-grid">
+          <section class="detail-card">
+            <h2>Highlights</h2>
+            <ul id="detailHighlights"></ul>
+          </section>
+          <section class="detail-card">
+            <h2>Event Gallery</h2>
+            <div class="detail-gallery-grid" id="detailGallery"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="chatbot/chatbot.js"></script>
+    <script>
+      const experiences = {
+        'code-vidya': {
+          title: 'Technical Lead at Code Vidya',
+          org: 'Code Vidya, Aatmoday Hobby Council, CSJM University',
+          time: 'Sep 2025 – Present',
+          description: 'Led technical initiatives, mentored students, and helped organize coding workshops and hackathons.',
+          highlights: [
+            'Guided student projects and technical learning paths',
+            'Coordinated event flow and problem-solving sessions',
+            'Mentored members on coding and project execution'
+          ],
+          gallery: [
+            { src: 'assets/ele/Certificate/1.jpg', label: 'Club event setup' },
+            { src: 'assets/ele/Certificate/2.jpeg', label: 'Team collaboration' }
+          ]
+        },
+        'edunet-foundation': {
+          title: 'Frontend Web Developer Intern',
+          org: 'Edunet Foundation',
+          time: 'Aug 2025 – Sep 2025',
+          description: 'Built responsive interfaces and improved website usability during the internship.',
+          highlights: [
+            'Designed UI components for a polished experience',
+            'Improved responsiveness across different screens',
+            'Worked closely with the design and development team'
+          ],
+          gallery: [
+            { src: 'assets/ele/Certificate/3.jpeg', label: 'UI implementation work' },
+            { src: 'assets/ele/Certificate/4.png', label: 'Project demo snapshot' }
+          ]
+        },
+        'code-alpha': {
+          title: 'Python Programming Intern',
+          org: 'Code Alpha',
+          time: 'Jul 2024 – Aug 2024',
+          description: 'Completed Python-based tasks and built several mini projects during the internship.',
+          highlights: [
+            'Developed Python projects from planning to completion',
+            'Improved coding confidence and problem-solving skills',
+            'Delivered assigned tasks on time'
+          ],
+          gallery: [
+            { src: 'assets/ele/Certificate/5.jpeg', label: 'Python project work' },
+            { src: 'assets/ele/Certificate/6.jpg', label: 'Internship certificate' }
+          ]
+        },
+        'bob-hacks-26': {
+          title: 'BOB Hacks\'26 AI Hackathon – Core Member Experience',
+          org: 'BOB Hacks\'26 – AI Hackathon',
+          time: '2026',
+          description: 'Core Member (Organizing Team) • Theme: From Prompts to Logits',
+          highlights: [
+            'Assisted in planning and coordinating hackathon operations',
+            'Managed participant registration and verification process',
+            'Guided participants during onboarding and throughout the event',
+            'Coordinated with volunteers and organizing members to ensure smooth execution',
+            'Assisted judges and mentors by managing participant flow and communication',
+            'Helped monitor hackathon activities and resolve on-ground issues',
+            'Supported technical event logistics and maintained seamless coordination between teams',
+            'Ensured proper time management during evaluation rounds and presentations',
+            'Contributed to maintaining discipline and smooth execution of the entire event'
+          ],
+          gallery: [
+            { src: 'assets/ele/Exper-photo/bob1.jpg', label: 'Hackathon setup' },
+            { src: 'assets/ele/Exper-photo/bob2.jpg', label: 'Event support' },
+            { src: 'assets/ele/Exper-photo/bob4.jpg', label: 'Event management' },
+            { src: 'assets/ele/Exper-photo/bob5.jpg', label: 'Participant guidance' },
+            { src: 'assets/ele/Exper-photo/bob6.jpg', label: 'Judging coordination' },
+            { src: 'assets/ele/Exper-photo/bob7.jpg', label: 'Event coordination' }
+
+          ]
+        },
+        'hackshodh': {
+          title: 'Technical Core - Network & System',
+          org: 'HackShodh – College Hackathon',
+          time: 'Jan 2026',
+          description: 'Managed infrastructure, troubleshooting, and event support during the hackathon.',
+          highlights: [
+            'Handled network and system setup',
+            'Resolved issues quickly during the event',
+            'Ensured smooth technical operation for participants'
+          ],
+          gallery: [
+            { src: 'assets/ele/Exper-photo/hs1.jpg', label: 'Hackathon setup' },
+            { src: 'assets/ele/Exper-photo/hs2.jpg', label: 'Event support' },
+            { src: 'assets/ele/Exper-photo/hs3.jpg', label: 'Technical coordination' },
+            { src: 'assets/ele/Exper-photo/hs4.jpg', label: 'Participant guidance' }
+        ]
+        },
+        'cs-education-week': {
+          title: 'Event Lead',
+          org: 'CS Education Week',
+          time: 'Dec 2025',
+          description: 'Led technical coordination and helped maintain a smooth event experience.',
+          highlights: [
+            'Managed judging and tech systems',
+            'Resolved issues in real time',
+            'Coordinated event schedules and support flow'
+          ],
+          gallery: [
+            { src: 'assets/ele/Exper-photo/cs.jpg', label: 'Event leadership moment' }
+          ]
+        },
+        'cyberxplore': {
+          title: 'Technical Person',
+          org: 'CYBERXPLORE',
+          time: 'Oct 2025',
+          description: 'Supported the event with technical setup and real-time troubleshooting.',
+          highlights: [
+            'Assisted with device and system setup',
+            'Handled on-the-spot issue resolution',
+            'Supported smooth operation of the event'
+          ],
+          gallery: [
+            { src: 'assets/ele/Exper-photo/cyber1.jpg', label: 'Setup and support' },
+            { src: 'assets/ele/Exper-photo/cyber2.jpg', label: 'Event day activity' },
+            { src: 'assets/ele/Exper-photo/cyber4.jpg', label: 'Participant guidance' },
+            { src: 'assets/ele/Exper-photo/cyber5.jpg', label: 'Speaker session' }
+          ]
+        },
+        'tux-talk': {
+          title: 'Technical Person',
+          org: 'TUX TALK\'25',
+          time: 'Sep 2025',
+          description: 'Contributed to the event by managing technical support and judging systems.',
+          highlights: [
+            'Assisted with technical infrastructure',
+            'Supported judging systems and live coordination',
+            'Maintained event flow with quick troubleshooting'
+          ],
+          gallery: [
+            { src: 'assets/ele/Exper-photo/tux1.jpg', label: 'Event support' },
+            { src: 'assets/ele/Exper-photo/tux2.jpg', label: 'Participant guidance' },
+            { src: 'assets/ele/Exper-photo/tux5.jpg', label: 'Collaboration' },
+            { src: 'assets/ele/Exper-photo/tux6.jpg', label: 'Speaker session' }
+          ]
+        }
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const eventKey = params.get('event') || 'code-vidya';
+      const experience = experiences[eventKey] || experiences['code-vidya'];
+
+      document.getElementById('detailTitle').textContent = experience.title;
+      document.getElementById('detailDescription').textContent = experience.description;
+      document.getElementById('detailOrg').textContent = experience.org;
+      document.getElementById('detailTime').textContent = experience.time;
+
+      const highlights = document.getElementById('detailHighlights');
+      experience.highlights.forEach((item) => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        highlights.appendChild(li);
+      });
+
+      const gallery = document.getElementById('detailGallery');
+      experience.gallery.forEach((item) => {
+        const card = document.createElement('div');
+        card.className = 'gallery-card';
+        card.innerHTML = `<img src="${item.src}" alt="${item.label}"><span>${item.label}</span>`;
+        gallery.appendChild(card);
+      });
+    </script>
+  </body>
+</html>

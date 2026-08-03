@@ -1,0 +1,304 @@
+{
+  "assistant": {
+    "name": "Dura AI",
+    "role": "Personal Portfolio Assistant",
+    "version": "2.0",
+    "owner": "Durgesh Gupta",
+    "greeting": "Hi 👋 I'm Dura AI, the personal AI assistant of Durgesh Gupta. I can answer anything about his projects, skills, experience, achievements, leadership, certifications and career journey.",
+    "personality": {
+      "tone": "Professional, Friendly, Confident",
+      "style": "Short but informative",
+      "responseLength": "Medium",
+      "emoji": true
+    }
+  },
+  "personalInformation": {
+    "fullName": "Durgesh Gupta",
+    "nickname": "Durgesh",
+    "title": "Software Developer | AI Enthusiast | Full Stack Web Developer | Technical Lead",
+    "location": "Kanpur, Uttar Pradesh, India",
+    "currentEducation": "Master of Computer Applications (2025-2027)",
+    "college": "Chhatrapati Shahu Ji Maharaj University",
+    "about": "I am a passionate Software Developer currently pursuing MCA. I specialize in Full Stack Development, Artificial Intelligence and Cloud technologies. I love building scalable web applications, AI-powered software and solving real-world problems through technology."
+  },
+  "careerObjective": {
+    "goal": "To become a Software Engineer at a leading product-based company where I can build impactful software and contribute to innovative AI-powered solutions."
+  },
+  "highlights": [
+    "Technical Lead at Code Vidya",
+    "Technical Co-Head of Evolothon 1.0",
+    "Frontend Developer Intern at Edunet Foundation",
+    "Python Developer Intern at Code Alpha",
+    "500+ LeetCode Problems Solved",
+    "150+ Google Cloud Skill Badges",
+    "Google Cloud Arcade Champion",
+    "Built AI Powered Portfolio Assistant",
+    "Built Multiple Full Stack Projects",
+    "Organized Technical Workshops",
+    "Organized State Level Hackathon",
+    "Open Source Learner",
+    "MCA Student (2025-2027)"
+  ],
+  "technicalSkills": {
+    "Frontend": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Bootstrap"
+    ],
+    "Backend": [
+      "Node.js",
+      "Express.js",
+      "REST API"
+    ],
+    "Databases": [
+      "MongoDB",
+      "MySQL",
+      "Firebase"
+    ],
+    "Programming": [
+      "Java",
+      "Python",
+      "C",
+      "C++"
+    ],
+    "AI": [
+      "Google Gemini API",
+      "Prompt Engineering",
+      "LLM Integration",
+      "AI Chatbots"
+    ],
+    "Cloud": [
+      "Google Cloud",
+      "Vercel",
+      "Cloud Skills Boost"
+    ],
+    "Tools": [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Postman",
+      "MongoDB Atlas",
+      "XAMPP"
+    ]
+  },
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "MySQL",
+    "Python",
+    "Java",
+    "C",
+    "C++",
+    "AI & ML",
+    "Google Gemini API",
+    "Problem Solving",
+    "DSA"
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Applications",
+      "institution": "Chhatrapati Shahu Ji Maharaj University, Kanpur",
+      "period": "2025 - Present"
+    },
+    {
+      "degree": "Bachelor of Computer Applications",
+      "institution": "Chhatrapati Shahu Ji Maharaj University, Kanpur",
+      "period": "2022 - 2025",
+      "cgpa": "8.46"
+    }
+  ],
+  "projects": [
+    {
+      "priority": 1,
+      "name": "AI Portfolio Assistant",
+      "tagline": "An intelligent chatbot that knows everything about me.",
+      "description": "A conversational AI assistant integrated into my portfolio that answers recruiter questions about my experience, skills, achievements and projects.",
+      "highlights": [
+        "Google Gemini API",
+        "Context-aware AI",
+        "Modern UI",
+        "Fast responses"
+      ],
+      "status": "Completed",
+      "featured": true
+    },
+    {
+      "priority": 2,
+      "name": "Bookified AI",
+      "featured": true,
+      "description": "AI powered Book Recommendation Platform."
+    },
+    {
+      "priority": 3,
+      "name": "Weather App",
+      "featured": true
+    },
+    {
+      "priority": 4,
+      "name": "Food Ordering System"
+    },
+    {
+      "priority": 5,
+      "name": "Stock Portfolio Tracker"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Technical Lead",
+      "organization": "Code Vidya",
+      "duration": "Sep 2025 - Present",
+      "impact": [
+        "Mentored students",
+        "Organized Workshops",
+        "Conducted Technical Sessions",
+        "Led Development Team"
+      ]
+    },
+    {
+      "role": "Technical Co-Head",
+      "organization": "Evolothon 1.0",
+      "impact": [
+        "Managed Technical Operations",
+        "Created Evaluation System",
+        "Handled Project Review Process"
+      ]
+    },
+    {
+      "role": "Frontend Developer Intern",
+      "organization": "Edunet Foundation"
+    },
+    {
+      "role": "Python Intern",
+      "organization": "Code Alpha"
+    }
+  ],
+  "achievements": {
+    "coding": [
+      "Solved 500+ LeetCode Problems",
+      "Completed LeetCode 75",
+      "Strong DSA Foundation"
+    ],
+    "cloud": [
+      "150+ Google Cloud Skill Badges",
+      "Google Cloud Arcade Champion"
+    ],
+    "leadership": [
+      "Technical Lead",
+      "Hackathon Organizer",
+      "Workshop Coordinator"
+    ],
+    "development": [
+      "Built AI Applications",
+      "Built Full Stack Applications",
+      "Built Multiple Responsive Websites"
+    ]
+  },
+  "certificates": [
+    "Google Cloud Skills Boost",
+    "Infosys Springboard - MySQL",
+    "MongoDB",
+    "Java AWT",
+    "Python Internship",
+    "Frontend Internship",
+    "Data Science & AI"
+  ],
+  "whereAreYouFrom": {
+    "keywords": [
+      "where are you from",
+      "where do you belong",
+      "where do you live",
+      "where is your home",
+      "where is your hometown",
+      "what is your hometown",
+      "which city are you from",
+      "which state are you from",
+      "where were you born",
+      "what is your native place",
+      "native place",
+      "birth place",
+      "hometown",
+      "home town",
+      "belongs",
+      "belong",
+      "live",
+      "living",
+      "location",
+      "current location",
+      "current city",
+      "kaha se ho",
+      "tum kaha se ho",
+      "aap kaha se ho",
+      "ghar kaha hai",
+      "ghar kahan hai",
+      "kahan rehte ho",
+      "kahan rahte ho",
+      "where do you stay",
+      "which place do you belong"
+    ],
+    "answer": "I am originally from Ayodhya, Uttar Pradesh, and I proudly consider myself an Ayodhyawasi. Although I currently study and work in Kanpur while pursuing my MCA at Chhatrapati Shahu Ji Maharaj University, Ayodhya is my hometown and the place I proudly call home."
+  },
+  "strengths": [
+    "Quick Learner",
+    "Problem Solver",
+    "Leadership",
+    "Communication",
+    "Team Management",
+    "Adaptability",
+    "Consistency",
+    "Self Learner"
+  ],
+  "currentlyLearning": [
+    "Advanced AI",
+    "LLM Development",
+    "System Design",
+    "Docker",
+    "AWS",
+    "Kubernetes"
+  ],
+  "futureGoals": [
+    "Become Software Engineer",
+    "Contribute to Open Source",
+    "Build AI Products",
+    "Work at Product Based Company"
+  ],
+  "statistics": {
+    "projects": 10,
+    "internships": 2,
+    "hackathonsOrganized": 2,
+    "certifications": 20,
+    "leetcodeProblems": 500,
+    "googleCloudBadges": 150
+  },
+  "socialLinks": {
+    "github": "https://github.com/Durgeshgupta191",
+    "linkedin": "https://www.linkedin.com/in/durgesh-gupta-130644288/",
+    "leetcode": "https://leetcode.com/u/1ThiGf1ZfH/",
+    "cloudSkillsBoost": "https://www.cloudskillsboost.google/public_profiles/4f4e9561-52c7-4927-8b8e-d5dca699d9f4"
+  },
+  "contactInformation": {
+    "email": "durgeshg659@gmail.com",
+    "phone": "+91 786093****"
+  },
+  "contact": {
+    "email": "durgeshg659@gmail.com",
+    "phone": "+91 786093****"
+  },
+  "resumeLink": "./assets/Durgesh_gupta_CV.pdf",
+  "faq": {
+    "bestProject": "My best project is the AI Portfolio Assistant because it combines Full Stack Development with Generative AI and provides recruiters with an interactive way to explore my profile.",
+    "whyHireMe": "I combine strong problem-solving skills, leadership experience, internships, modern web development expertise and AI integration experience. I continuously learn new technologies and enjoy building impactful products.",
+    "speciality": "Full Stack Development + Artificial Intelligence",
+    "currentlyWorking": "Currently I'm improving my AI Portfolio, building AI assistants and preparing advanced Full Stack projects.",
+    "dreamCompany": "I'm looking forward to joining a product-based company where I can contribute to impactful software while continuously learning."
+  }
+}
