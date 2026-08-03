@@ -1427,51 +1427,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // Add some enhanced features
 class EnhancedFeatures {
     constructor() {
-        this.initCursorEffects();
         this.initKeyboardNavigation();
         this.initAccessibility();
-    }
-
-    initCursorEffects() {
-        // Custom cursor for interactive elements
-        const cursor = document.createElement('div');
-        cursor.className = 'custom-cursor';
-        cursor.style.cssText = `
-            position: fixed;
-            width: 20px;
-            height: 20px;
-            background: var(--primary);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 9999;
-            mix-blend-mode: difference;
-            transition: transform 0.1s ease;
-            opacity: 0;
-        `;
-        document.body.appendChild(cursor);
-
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX - 10 + 'px';
-            cursor.style.top = e.clientY - 10 + 'px';
-            cursor.style.opacity = '1';
-        });
-
-        document.addEventListener('mouseenter', () => {
-            cursor.style.opacity = '1';
-        });
-
-        document.addEventListener('mouseleave', () => {
-            cursor.style.opacity = '0';
-        });
-
-        // Scale cursor on interactive elements
-        document.addEventListener('mouseover', (e) => {
-            if (e.target.matches('a, button, .btn, .filter-btn, .project-card')) {
-                cursor.style.transform = 'scale(1.5)';
-            } else {
-                cursor.style.transform = 'scale(1)';
-            }
-        });
     }
 
     initKeyboardNavigation() {
